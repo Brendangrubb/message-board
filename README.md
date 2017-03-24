@@ -56,14 +56,14 @@
 
 **Initial Models & Components**
   * models (1 of 2)
-    * add post model (question, author, notes, category, timestamp)
+    * add post model (question, author, body, category, timestamp)
     * add response model (answer, responder, category, timestamp)
+    * install emberfire
     * write seed.json
     * create Firebase DB
-      * change permissions
-      * install emberfire
-      * add API info to environments.js
       * upload seed.json
+      * change permissions
+      * add API info to environments.js
   * components (1 of 3)
     * display all posts (on index route)
     * show new post form (on index route)

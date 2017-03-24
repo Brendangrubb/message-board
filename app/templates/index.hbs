@@ -5,10 +5,10 @@
 </div>
 
 <div class="row center">
-  {{save-question saveQuestion="saveQuestion"}}
+  {{save-post savePost="savePost"}}
 </div>
 
-<div class="row question-list">
+<div class="row post-list">
   <div class="col-md-12">
     <div class="row">
       <div class="col-md-3">
@@ -27,7 +27,7 @@
     <hr>
     <div class="row">
       {{#each model as |post|}}
-      {{show-all-questions post=post}}
+      {{show-all-posts post=post}}
       {{/each}}
     </div>
   </div>

@@ -6,9 +6,9 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    saveQuestion(params) {
-      var newQuestion = this.store.createRecord('post', params);
-      newQuestion.save();
+    savePost(params) {
+      var newPost = this.store.createRecord('post', params);
+      newPost.save();
     }
   }
 });

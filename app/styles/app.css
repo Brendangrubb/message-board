@@ -1,4 +1,5 @@
 header {
+  background-color: #b0a6a2;
   padding-bottom: 10px;
 }
 
@@ -7,6 +8,7 @@ header h1 {
 }
 
 body{
+  background-color: #2b2525;
   margin-top: 150px;
   margin-bottom: 70px;
   bottom: 0;
@@ -16,18 +18,34 @@ body{
   text-align: center;
 }
 
+.header-links a {
+  color: #f2f2eb;
+  transition: .5s;
+  font-size: 1.2em;
+}
+
+.header-links a:hover {
+  color: #151210;
+  font-size: 1.4em;
+}
 
 .logo {
   text-align: center;
 }
 
 .main-container {
+  background-color: #f2f2eb;
   font-size: 1.2em;
   min-height: 1000px;
   max-height: 1000px;
+  overflow-y: scroll;
   padding: 25px;
 }
 
 .page-header {
   font-size: 3em;
 }
+
+
+/*for application head
+<style>@font-face { font-family: laser; src: url("laser.ttf")}</style>*/

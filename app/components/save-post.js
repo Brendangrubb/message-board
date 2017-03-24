@@ -1,12 +1,12 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  addQuestion: false,
+  addPost: false,
   actions: {
-    questionFormShow() {
-      this.set('addQuestion', true);
+    postFormShow() {
+      this.set('addPost', true);
     },
-    saveQuestion() {
+    savePost() {
       var params = {
         author: this.get('author'),
         question: this.get('question'),
@@ -14,8 +14,9 @@ export default Ember.Component.extend({
         category: this.get('category'),
         timestamp: this.get('timestamp')
       };
-      this.set('addQuestion', false);
-      this.sendAction('saveQuestion', params);
+      console.log(params);
+      this.set('addPost', false);
+      this.sendAction('savePost', params);
     }
   }
 });

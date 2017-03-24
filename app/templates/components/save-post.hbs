@@ -1,4 +1,4 @@
-{{#if addQuestion}}
+{{#if addPost}}
   <form>
     <div class="form-group">
       <label for="author">Who Are You?</label>
@@ -20,8 +20,8 @@
       <label for="timestamp">Tempo Timestamp</label>
       {{input class="form-control" placeholder="temp timestamp" value=timestamp id="timestamp"}}
     </div>
-    <button {{action 'saveQuestion'}}>Submit Question</button>
+    <button {{action 'savePost'}}>Submit Question</button>
   </form>
 {{else}}
-  <button class="btn" {{action 'questionFormShow'}}>Ask a Question</button>
+  <button class="btn" {{action 'postFormShow'}}>Ask a Question</button>
 {{/if}}
