@@ -1,0 +1,33 @@
+header {
+  padding-bottom: 10px;
+}
+
+header h1 {
+  font-size: 4em;
+}
+
+body{
+  margin-top: 150px;
+  margin-bottom: 70px;
+  bottom: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+
+.logo {
+  text-align: center;
+}
+
+.main-container {
+  font-size: 1.2em;
+  min-height: 1000px;
+  max-height: 1000px;
+  padding: 25px;
+}
+
+.page-header {
+  font-size: 3em;
+}
