@@ -6,8 +6,11 @@
 
 <br><br>
 <h3>comments</h3>
+
 <ul>
-{{#each model.responses as |response|}}
-  <li>responder-{{response.responder}} - answer-{{response.answer}} - cat-{{response.respCategory}}</li>
-{{/each}}
+  {{#each model.responses as |response|}}
+    <li>responder-{{response.responder}} - answer-{{response.answer}} - cat-{{response.respCategory}}</li>
+  {{/each}}
 </ul>
+
+{{new-response saveResponse="saveResponse"}}

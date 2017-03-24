@@ -1,19 +1,19 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  addNewResponse: false,
+  addResponse: false,
   actions: {
     responseFormShow() {
-      this.set('addNewResponse', true);
+      this.set('addResponse', true);
     },
     saveResponse() {
      var params = {
-       answer: this.get('answer'),
        responder: this.get('responder'),
+       answer: this.get('answer'),
        respCategory: this.get('respCategory'),
        respTimestamp: this.get('respTimestamp')
      };
-     this.set('addNewResponse', false);
+     this.set('addResponse', false);
      this.sendAction('saveResponse', params);
    }
   }

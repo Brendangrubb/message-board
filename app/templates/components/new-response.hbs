@@ -1,1 +1,23 @@
-{{response.author}}
+{{#if addResponse}}
+    <form>
+      <div class="form-group">
+        <label for="responder">Who Are You?</label>
+        {{input class="form-control" placeholder="username please" value=responder id="responder"}}
+      </div>
+      <div class="form-group">
+        <label for="answer">What's Your Answer of Comment?</label>
+        {{input class="form-control" value=answer id="answer"}}
+      </div>
+      <div class="form-group">
+        <label for="respCategory">Category</label>
+        {{input class="form-control" value=respCategory id="respCategory"}}
+      </div>
+      <div class="form-group">
+        <label for="respTimestamp">Temp Timestamp</label>
+        {{input class="form-control" value=respTimestamp id="respTimestamp"}}
+      </div>
+      <button {{action 'saveResponse'}}>Save Response</button>
+    </form>
+{{else}}
+  <button {{action 'responseFormShow'}}>Respond!</button>
+{{/if}}
