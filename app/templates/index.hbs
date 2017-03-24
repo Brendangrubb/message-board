@@ -1,3 +1,24 @@
 <p class="page-header center">Main</p>
 <br>
 <p class="main-body">Thanks for joining our forum! As you can clearly see, there is a list of questions below. If you think you have an answer or if you would like more context for that question, click the link. It will take you to a page where you can post a response or a comment. Happy posting!</p>
+
+{{#each model as |post|}}
+<div class="row">
+  <div class="col-md-2">
+    <p>{{post.question}}</p>
+  </div>
+  <div class="col-md-2">
+    <p>{{post.author}}</p>
+  </div>
+  <div class="col-md-2">
+    <p>{{post.body}}</p>
+  </div>
+  <div class="col-md-2">
+    <p>{{post.category}}</p>
+
+  </div>
+  <div class="col-md-2">
+    <p>{{post.timestamp}}</p>
+  </div>
+</div>
+{{/each}}
