@@ -2,23 +2,29 @@
 <br>
 <p class="main-body">Thanks for joining our forum! As you can clearly see, there is a list of questions below. If you think you have an answer or if you would like more context for that question, click the link. It will take you to a page where you can post a response or a comment. Happy posting!</p>
 
-{{#each model as |post|}}
 <div class="row">
-  <div class="col-md-2">
-    <p>{{post.question}}</p>
-  </div>
-  <div class="col-md-2">
-    <p>{{post.author}}</p>
-  </div>
-  <div class="col-md-2">
-    <p>{{post.body}}</p>
-  </div>
-  <div class="col-md-2">
-    <p>{{post.category}}</p>
-
-  </div>
-  <div class="col-md-2">
-    <p>{{post.timestamp}}</p>
+  <div class="col-md-12">
+    <table align="center" class="table">
+      <div class="row">
+        <div class="col-md-3">
+          <h4>Author</h4>
+        </div>
+        <div class="col-md-5">
+          <h4>Question</h4>
+        </div>
+        <div class="col-md-2">
+          <h4>Category</h4>
+        </div>
+        <div class="col-md-2">
+          <h4>Date</h4>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+          {{#each model as |post|}}
+            {{show-all-questions post=post}}
+          {{/each}}
+      </div>
+    </table>
   </div>
 </div>
-{{/each}}
