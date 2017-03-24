@@ -1,9 +1,9 @@
 
   <div class="col-md-3">
-    <p>{{#link-to 'post' post_id}}{{post.author}}{{/link-to}}</p>
+    <p>{{post.author}}</p>
   </div>
   <div class="col-md-5">
-    <p>{{#link-to 'post' post_id}}{{post.question}}{{/link-to}}</p>
+    <p>{{#link-to 'post' post.id}}{{post.question}}{{/link-to}}</p>
   </div>
   <div class="col-md-2">
     <p>{{post.category}}</p>

@@ -20,7 +20,7 @@
       <label for="timestamp">Tempo Timestamp</label>
       {{input class="form-control" placeholder="temp timestamp" value=timestamp id="timestamp"}}
     </div>
-    <button {{action 'savePost'}}>Submit Question</button>
+    <button class="btn" {{action 'savePost'}}>Submit Question</button>
   </form>
 {{else}}
   <button class="btn" {{action 'postFormShow'}}>Ask a Question</button>
