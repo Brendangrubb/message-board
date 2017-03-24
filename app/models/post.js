@@ -5,5 +5,6 @@ export default DS.Model.extend({
   question: DS.attr(),
   body: DS.attr(),
   category: DS.attr(),
-  timestamp: DS.attr()
+  timestamp: DS.attr(),
+  response: DS.hasMany('response', { async: true })
 });

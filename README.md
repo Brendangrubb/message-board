@@ -57,7 +57,7 @@
 **Initial Models & Components**
   * models (1 of 2)
     * add post model (question, author, body, category, timestamp)
-    * add response model (answer, responder, category, timestamp)
+    * add response model (answer, responder, respCategory, respTimestamp)
     * install emberfire
     * write seed.json
     * create Firebase DB

@@ -1,5 +1,13 @@
+<h3>question</h3>
+{{full-post post=model.posts}}
+{{delete-post post=model.posts deletePost="deletePost"}}
+<br>
+{{update-post post=model.posts updatePost="updatePost"}}
 
-{{full-post post=model}}
-
-{{delete-post post=model deletePost="deletePost"}}
-{{update-post post=model updatePost="updatePost"}}
+<br><br>
+<h3>comments</h3>
+<ul>
+{{#each model.responses as |response|}}
+  <li>responder-{{response.responder}} - answer-{{response.answer}} - cat-{{response.respCategory}}</li>
+{{/each}}
+</ul>
