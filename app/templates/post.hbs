@@ -9,7 +9,7 @@
 
 <ul>
   {{#each model.responses as |response|}}
-    <li>responder-{{response.responder}} - answer-{{response.answer}} - cat-{{response.respCategory}}</li>
+    {{show-all-responses response=response}}
   {{/each}}
 </ul>
 

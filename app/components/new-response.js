@@ -11,7 +11,8 @@ export default Ember.Component.extend({
        responder: this.get('responder'),
        answer: this.get('answer'),
        respCategory: this.get('respCategory'),
-       respTimestamp: this.get('respTimestamp')
+       respTimestamp: this.get('respTimestamp'),
+       post: this.get('post'),
      };
      this.set('addResponse', false);
      this.sendAction('saveResponse', params);
