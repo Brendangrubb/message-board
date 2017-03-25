@@ -73,3 +73,11 @@ body{
 .page-header {
   font-size: 2.5em;
 }
+
+.post-body {
+  text-align: justify;
+}
+
+.question-title {
+  font-size: 2.1em;
+}

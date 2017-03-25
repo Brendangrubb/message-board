@@ -1,12 +1,20 @@
-<h3>question</h3>
-{{full-post post=model}}
-{{delete-post post=model deletePost="deletePost"}}
+<div class="row center">
+  <div class="row">
+    <div class="col-md-12">
+      {{full-post post=model}}
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+      {{update-post post=model updatePost="updatePost"}}
+  </div>
+  <br>
+  <div class="row">
+      {{delete-post post=model deletePost="deletePost"}}
+  </div>
+</div>
 <br>
-{{update-post post=model updatePost="updatePost"}}
-
-<br><br>
-<h3>comments</h3>
-
+<h4><u>comments</u></h4>
 <ul>
   {{#each model.responses as |response|}}
     {{show-all-responses response=response}}

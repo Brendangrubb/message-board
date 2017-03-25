@@ -1,4 +1,19 @@
-<h3 class="center">{{post.question}}</h3>
-<h5 class="center">asked by {{post.author}} // {{post.category}} // {{post.timestamp}}</h5>
-
+<div class="row center">
+  <div class="col-md-12">
+    <h1 class="question-title"><u>{{post.question}}</u></h1>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-md-4">
+    <h3>asked by <strong>{{post.author}}</strong></h3>
+  </div>
+  <div class="col-md-4">
+    <h3>category: <strong>{{post.category}}</strong></h3>
+  </div>
+  <div class="col-md-4">
+    <h3>posted on <span class="date">{{post.timestamp}}</span></h3>
+  </div>
+</div>
+<br>
 <p class="post-body">{{post.body}}</p>
