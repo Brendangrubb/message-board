@@ -1,30 +1,27 @@
-<p class="page-header center">Main</p>
-<br>
 <div class="row">
-  <p class="main-body">Thanks for joining our forum! As you can clearly see, there is a list of questions below. If you think you have an answer or if you would like more context for that question, click the link. It will take you to a page where you can post a response or a comment. Click a question for more info. Happy Posting!</p>
+  <p class="main-body center">Music Hole is an interactive community for music lovers. Feel free to post trivia questions, ernest inquiries, snarky opinions or gushing record reviews. </p>
 </div>
-
+<br>
 <div class="row center">
   {{save-post savePost="savePost"}}
 </div>
-
+<br>
 <div class="row post-list">
   <div class="col-md-12">
     <div class="row">
       <div class="col-md-3">
-        <h4>Author</h4>
+        <h2><u>Author</u></h2>
       </div>
-      <div class="col-md-5">
-        <h4>Question</h4>
-      </div>
-      <div class="col-md-2">
-        <h4>Category</h4>
+      <div class="col-md-6">
+        <h2><u>Question</u></h2>
       </div>
       <div class="col-md-2">
-        <h4>Date</h4>
+        <h2><u>Category</u></h2>
+      </div>
+      <div class="col-md-1">
+        <h2><u>Date</u></h2>
       </div>
     </div>
-    <hr>
     <div class="row">
       {{#each model as |post|}}
       {{show-all-posts post=post}}

@@ -1,39 +1,46 @@
 header {
   background-color: #b0a6a2;
-  padding-bottom: 10px;
-}
-
-header h1 {
-  font-size: 4em;
 }
 
 body{
   background-color: #2b2525;
-  margin-top: 150px;
+  margin-top: 180px;
   margin-bottom: 70px;
   bottom: 0;
   font-family: arista;
+  font-size: 1.3em;
+
+}
+
+.ask-a-question{
+  font-size: 1.4em;
+  width: 500px;
 }
 
 .center {
   text-align: center;
 }
 
+.date {
+  font-family: sans-serif;
+  font-size: .9em;
+}
+
 .header-links a {
+  font-size: 1.5em;
   color: #f2f2eb;
   transition: .5s;
-  font-size: 1.2em;
 }
 
 .header-links a:hover {
+  font-size: 1.7em;
   color: #151210;
-  font-size: 1.4em;
 }
 
 .logo {
   text-align: center;
   font-family: arista-bold;
-
+  font-size: 6em;
 }
 
 .main-container {
@@ -43,6 +50,10 @@ body{
   max-height: 1000px;
   overflow-y: scroll;
   padding: 25px;
+}
+
+.main-body {
+  font-size: 1.3em;
 }
 
 .page-header {
