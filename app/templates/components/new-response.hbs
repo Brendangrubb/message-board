@@ -1,4 +1,6 @@
 {{#if addResponse}}
+<div class="row">
+  <div class="col-md-12 form-padding">
     <form>
       <div class="form-group">
         <label for="responder">Who Are You?</label>
@@ -8,8 +10,10 @@
         <label for="answer">What's Your Answer or Comment?</label>
         {{input class="form-control" value=answer id="answer"}}
       </div>
-      <button class="btn" {{action 'saveResponse'}}>Save Response</button>
+      <button class="btn update-delete" {{action 'saveResponse'}}>Save Response</button>
     </form>
+  </div>
+</div>
 {{else}}
   <button class="btn btn-lg ask-a-question" {{action 'responseFormShow'}}>Respond!</button>
 {{/if}}
