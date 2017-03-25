@@ -1,23 +1,27 @@
 {{#if addPost}}
-  <form>
-    <div class="form-group">
-      <label for="author">Who Are You?</label>
-      {{input class="form-control" placeholder="username please" value=author id="author"}}
+  <div class="row">
+    <div class="col-md-12 form-padding">
+      <form>
+        <div class="form-group">
+          <label for="author"><u>Who Are You?</u></label>
+          {{input class="form-control" placeholder="username please" value=author id="author"}}
+        </div>
+        <div class="form-group">
+          <label for="question"><u>What Do You Have To Say?</u></label>
+          {{input class="form-control" placeholder="whatever you'd like to ask or get off your chest" value=question id="question"}}
+        </div>
+        <div class="form-group">
+          <label for="body"><u>Additional Information</u></label>
+          {{textarea rows="8" class="form-control" placeholder="contextual info goes a long way" value=body id="body"}}
+        </div>
+        <div class="form-group">
+          <label for="category"><u>Category</u></label>
+          {{input class="form-control" placeholder="ex. black metal, hair metal, black-hair metal" value=category id="category"}}
+        </div>
+        <button class="btn btn-lg" {{action 'savePost'}}>Submit Question</button>
+      </form>
     </div>
-    <div class="form-group">
-      <label for="question">What is Your Question?</label>
-      {{input class="form-control" placeholder="whatever you'd like to ask...trivia question, advice, etc" value=question id="question"}}
-    </div>
-    <div class="form-group">
-      <label for="body">Additional Information</label>
-      {{textarea rows="8" class="form-control" placeholder="contextual info goes a long way" value=body id="body"}}
-    </div>
-    <div class="form-group">
-      <label for="category">Category</label>
-      {{input class="form-control" placeholder="ex. black metal, hair metal, black-hair metal" value=category id="category"}}
-    </div>
-    <button class="btn" {{action 'savePost'}}>Submit Question</button>
-  </form>
+  </div>
 {{else}}
   <button class="btn btn-lg ask-a-question" {{action 'postFormShow'}}>Ask a Question</button>
 {{/if}}

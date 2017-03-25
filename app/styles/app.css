@@ -26,6 +26,11 @@ body{
   font-size: .9em;
 }
 
+.form-padding {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
 .header-links a {
   font-size: 1.5em;
   color: #f2f2eb;
