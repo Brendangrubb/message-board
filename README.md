@@ -82,7 +82,6 @@
     * update models to include hasMany (post) & belongsTo (response)
   * components (3 of 3)
     * display all responses associated with this post (on question route)
-    * delete specific response (on question route)
     * refactor delete post to include responses associated with that post
 
 #### Style

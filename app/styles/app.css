@@ -12,6 +12,7 @@ body{
   margin-top: 150px;
   margin-bottom: 70px;
   bottom: 0;
+  font-family: arista;
 }
 
 .center {
@@ -31,6 +32,8 @@ body{
 
 .logo {
   text-align: center;
+  font-family: arista-bold;
+
 }
 
 .main-container {
@@ -45,7 +48,3 @@ body{
 .page-header {
   font-size: 3em;
 }
-
-
-/*for application head
-<style>@font-face { font-family: laser; src: url("laser.ttf")}</style>*/
