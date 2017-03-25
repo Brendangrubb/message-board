@@ -12,13 +12,13 @@
   <div class="row">
       {{delete-post post=model deletePost="deletePost"}}
   </div>
+  <br>
+  <div class="row">
+    {{new-response saveResponse="saveResponse" post=model}}
+  </div>
+  <br>
+  <h3><u>Previous Responses</u></h3>
 </div>
-<br>
-<h4><u>comments</u></h4>
-<ul>
   {{#each model.responses as |response|}}
     {{show-all-responses response=response}}
   {{/each}}
-</ul>
-
-{{new-response saveResponse="saveResponse" post=model}}
