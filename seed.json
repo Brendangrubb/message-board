@@ -6,19 +6,16 @@
       "author": "Burger McDonald",
       "body": "I have heard that Lou Reed could play 6 guitars at once. I saw a picture online but I think it mightr have been photoshopped. I'm pretty sure he only had two arms with a hand a piece but maybe I'm wrong? Someone help me!",
       "category": "Guitarists",
-      "timestamp": "5:00"
     }, {
       "question": "What kind of amp is the best for new age music?",
       "author": "Yolanda Squatpump",
       "body": "I am starting a new age musical project and I'm wondering what amp would be the best for this? I need it to be really loud. Like, REALLY really loud. Otherwise how can I force all of the people in these loud bars to listen to my soothing music??",
       "category": "New Age",
-      "timestamp": "3:00"
     }, {
       "question": "Were Michael McDonald and Kenny Loggins ever married?",
       "author": "Cruz Thrasher",
       "body": "I thought I heard once that Michael McDonald and Kenny Loggins got married on a lark when they were vacationing together on some private island. I know it's a longshot but I made a bet with my bookie and I have a lot of money riding on this, I could really use some confirmation.",
       "category": "Yacht Rock",
-      "timestamp": "1:00"
     }
   ],
   "responses":
@@ -26,20 +23,14 @@
     {
       "answer": "Michael McDonald was never married to Kenny Loggins, jackass",
       "responder": "K. Loggins",
-      "respCategory": "Yacht Rock",
-      "respTimestamp": "12:00"
     },
     {
       "answer": "New Age musicians should only use natural amplification by playing in cathedrals and caverns",
       "responder": "Kitaro",
-      "respCategory": "NewAge",
-      "respTimestamp": "15:00"
     },
     {
       "answer": "Contrary to pooular belief, Lou Reed could only play four guitars at once. One with each hand and one with each foot.",
       "responder": "Laurie Anderson",
-      "respCategory": "Guitarists",
-      "respTimestamp": "3:30"
     }
   ]
 }

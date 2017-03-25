@@ -2,9 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    return Ember.RSVP.hash({
-      posts: this.store.findRecord('post', params.post_id),
-    });
+      return this.store.findRecord('post', params.post_id);
   },
 
   actions: {
@@ -21,13 +19,13 @@ export default Ember.Route.extend({
       this.transitionTo('index');
     },
     saveResponse(params) {
+      console.log(params);
       var newResponse = this.store.createRecord('response', params);
       var post = params.post;
       post.get('responses').addObject(newResponse);
       newResponse.save().then(function() {
         return post.save();
       });
-
     }
   }
 });
