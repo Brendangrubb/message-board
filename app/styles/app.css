@@ -19,6 +19,11 @@ body{
 .ask-a-question {
   font-size: 1.4em;
   width: 500px;
+  transition: .5s;
+}
+
+.ask-a-question:hover {
+  width: 525px;
 }
 
 .center {
@@ -49,7 +54,7 @@ body{
 .logo {
   text-align: center;
   font-family: arista-bold;
-  font-size: 6em;
+  font-size: 8em;
 }
 
 .main-container {
@@ -66,5 +71,5 @@ body{
 }
 
 .page-header {
-  font-size: 3em;
+  font-size: 2.5em;
 }
