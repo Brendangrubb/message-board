@@ -1,5 +1,7 @@
 import Ember from 'ember';
 
+var date = moment().format('M' + '/' + 'D' + '/' + 'YY');
+
 export default Ember.Component.extend({
   addResponse: false,
   actions: {
@@ -11,7 +13,7 @@ export default Ember.Component.extend({
        responder: this.get('responder'),
        answer: this.get('answer'),
        respCategory: this.get('respCategory'),
-       respTimestamp: this.get('respTimestamp'),
+       respTimestamp: date,
        post: this.get('post'),
      };
      this.set('addResponse', false);

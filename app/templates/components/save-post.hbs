@@ -10,15 +10,11 @@
     </div>
     <div class="form-group">
       <label for="body">Additional Information</label>
-      {{input class="form-control" placeholder="contextual info goes a long way" value=body id="body"}}
+      {{textarea rows="8" class="form-control" placeholder="contextual info goes a long way" value=body id="body"}}
     </div>
     <div class="form-group">
       <label for="category">Category</label>
       {{input class="form-control" placeholder="ex. black metal, hair metal, black-hair metal" value=category id="category"}}
-    </div>
-    <div class="form-group">
-      <label for="timestamp">Tempo Timestamp</label>
-      {{input class="form-control" placeholder="temp timestamp" value=timestamp id="timestamp"}}
     </div>
     <button class="btn" {{action 'savePost'}}>Submit Question</button>
   </form>

@@ -1,5 +1,7 @@
 import Ember from 'ember';
 
+var date = moment().format('M' + '/' + 'D' + '/' + 'YY');
+
 export default Ember.Component.extend({
   updatePostForm: false,
   actions: {
@@ -14,7 +16,7 @@ export default Ember.Component.extend({
         question: this.get('question'),
         body: this.get('body'),
         category: this.get('category'),
-        timestamp: this.get('timestamp')
+        timestamp: date
       };
       this.set('updatePostForm', false);
       this.sendAction('updatePost', post, params);

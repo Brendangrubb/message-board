@@ -1,5 +1,6 @@
 {
   "name": "message-board",
   "dependencies": {
+    "moment": "momentjs#^2.18.1"
   }
 }
