@@ -92,3 +92,11 @@ button {
 .question-title {
   font-size: 2.1em;
 }
+
+.update-delete {
+  transition: .5s;
+}
+
+.update-delete:hover {
+  color: #f2f2eb;
+}
