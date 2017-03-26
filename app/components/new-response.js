@@ -6,8 +6,6 @@ export default Ember.Component.extend({
   addResponse: false,
   actions: {
     responseFormShow(post) {
-      console.log('resp form show post  new-resp.js');
-      console.log(post);
       this.set('addResponse', true);
     },
     saveResponse() {

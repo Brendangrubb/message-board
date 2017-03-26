@@ -9,7 +9,6 @@ export default Ember.Component.extend({
       this.set('addPost', true);
     },
     savePost() {
-      console.log(date);
       var params = {
         author: this.get('author'),
         question: this.get('question'),
@@ -17,10 +16,9 @@ export default Ember.Component.extend({
         category: this.get('category'),
         timestamp: date
       };
-      console.log(params);
       this.set('addPost', false);
       this.sendAction('savePost', params);
-    },
+    }
 
   }
 });

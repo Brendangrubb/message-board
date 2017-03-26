@@ -1,3 +1,5 @@
+<!-- Hi Tyler! There was talk of using GitHub gist to save the environment.js file outside of the project folder but because this wasn't explicitly listed with the project requirements, I opted to leave it in. I hope that's okay. -->
+
 # **Message Board**
 #### Brendan Grubb, 3/24/2017
 
@@ -31,7 +33,7 @@
 ## Planning
 
 #### Basic UI
-* On the main page of the forum, the user is able to post a question. They are also able to view a list of all questions currently posed to the forum. The user is able to click on any of the questions on the main page to see more detailed information about the question and questioner. From this page, users can delete questions or post answers or comments to that question. They will also be able to delete their answers/comments.
+* On the main page of the forum, the user is able to post a question. They are also able to view a list of all questions currently posed to the forum. The user is able to click on any of the questions on the main page to see more detailed information about the question and questioner. From this page, users can delete questions or post answers or comments to that question.
 
 #### MVP Checklist
 **Initial Files**
@@ -81,6 +83,7 @@
   * models (2 of 2)
     * update models to include hasMany (post) & belongsTo (response)
   * components (3 of 3)
+    * add response (on question route)
     * display all responses associated with this post (on question route)
     * refactor delete post to include responses associated with that post
 

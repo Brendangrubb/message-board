@@ -19,7 +19,6 @@ export default Ember.Route.extend({
       this.transitionTo('index');
     },
     saveResponse(params) {
-      console.log(params);
       var newResponse = this.store.createRecord('response', params);
       var post = params.post;
       post.get('responses').addObject(newResponse);
