@@ -104,8 +104,7 @@
 
 &nbsp;
 ## Known Bugs
-* No known bugs
-
+* Moment was buggy so dates are currently hard coded. 
 
 &nbsp;
 ## Technologies Used

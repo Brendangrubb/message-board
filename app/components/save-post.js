@@ -1,6 +1,7 @@
 import Ember from 'ember';
-
-var date = moment().format('M' + '/' + 'D' + '/' + 'YY');
+// import moment from 'moment';
+ 
+// var date = moment().format('M' + '/' + 'D' + '/' + 'YY');
 
 export default Ember.Component.extend({
   addPost: false,
@@ -14,7 +15,7 @@ export default Ember.Component.extend({
         question: this.get('question'),
         body: this.get('body'),
         category: this.get('category'),
-        timestamp: date
+        timestamp: "12/5/17"
       };
       this.set('addPost', false);
       this.sendAction('savePost', params);
